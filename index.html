@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 8h14l1 13H4L5 8Z"/>
+                    <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+                </svg>
+            </span>
+
+            <span class="logo-name">Shop<span>Ease.</span></span>
+        </div>
+
+        <div class="nav-actions">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <a href="#" class="sign-in-btn">Sign In</a>
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">DISCOVER SOMETHING NEW</p>
+            <h1>Find Products<br>You'll Love.</h1>
+            <p class="hero-description">
+                Explore a collection of amazing products
+                from around the world.
+            </p>
+            <a href="#products" class="explore-btn">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <main id="products" class="products-section">
+
+        <div class="section-heading">
+            <p class="tagline">OUR COLLECTION</p>
+            <h2>Explore Products</h2>
+            <p>Find your next favourite product.</p>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="filter-container">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+            </select>
+        </div>
+
+        <!-- Product Count -->
+        <p id="productCount">Loading products...</p>
+
+        <!-- Loading Message -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading amazing products...</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="error-message hidden">
+            <p>Oops! Something went wrong.</p>
+            <button id="retryBtn">Try Again</button>
+        </div>
+
+        <!-- Product Cards -->
+        <div id="productContainer" class="product-grid"></div>
+
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About ShopEase</h2>
+        <p>
+            ShopEase is a product discovery platform powered by
+            real-time API integration, built using HTML, CSS
+            and JavaScript.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ShopEase. All Rights Reserved.</p>
+        <p>Powered by DummyJSON API</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
